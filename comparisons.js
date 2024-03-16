@@ -17,14 +17,15 @@ console.log("Is numberTeachers greater than numberStudents?", numberTeachers > n
 // this should log: "Is numberTeachers greater than numberStudents?" false
 
 // YOU DO: log the result of the comparison: is numberTeachers strictly equal to stringTeachers?
+console.log("Is numberTeachers strictly equal to stringTeachers?", numberTeachers === stringTeachers);
 // this should log: false
 
 // YOU DO: log the result of the comparison: is numberTeachers not equal to numberStudents?
 // this should log: true
-
+console.log("Is numberTeachers not equal to numberStudents?", numberTeachers != numberStudents);
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 21?
 // this should log: false
-
+console.log("Is numberStudents greater than or equal to 21?", numberStudents >= 21);
 
 // #-------------------
 // PART 2: Articulating what you are doing
@@ -34,14 +35,14 @@ console.log("Is numberTeachers greater than numberStudents?", numberTeachers > n
 
 var friends = 6;
 var siblings = 2;
-console.log(friends > siblings);
+//console.log(friends > siblings);
 // YOU DO: Explain.
-
+//Returns true if the left operand is greater than the right operand. Here, this should log True
 var attendees = 9;
 var meals = 8;
-console.log(attendees !== meals);
+//console.log(attendees !== meals);
 // YOU DO: Explain.
-
+//Returns true if the operands are of the same type but not equal, or are of different type. Here, this should log True
 
 // #-------------------
 // PART 3: Logical Operators
@@ -52,9 +53,9 @@ var finishedHomework = false;
 
 // EXAMPLE:
 // Determine if the user is hungry and has completed their homework
-console.log(isHungry && finishedHomework);
+//console.log(isHungry && finishedHomework);
 // Determine if the user is hungry or has completed their homework
-console.log(isHungry || finishedHomework);
+//console.log(isHungry || finishedHomework);
 
 var lovesToPlay = true;
 var lovesDogPark = false;
@@ -63,10 +64,11 @@ var age = 1;
 
 // YOU DO:
 // Determine if the dog loves to play and loves treats
-
+console.log(lovesToPlay && lovesTreats);
 // YOU DO:
 // Determine if the dog loves to play or loves the dog park
-
+console.log(lovesDogPark || lovesToPlay);
 // YOU DO:
 // Determine if the dog loves to play and is a puppy
+console.log(lovesToPlay && age < 2);
 // HINT: Use the age variable and assume that a puppy is less than 2 years old
